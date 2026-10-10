@@ -254,5 +254,61 @@
     <!-- tbody : table body - chứa phần thân, nội dung của bảng -->
     <!-- tfoot : table footer - chứa phần cuối của bảng -->
     <!-- cả 3 chỉ hỗ trợ trình đọc máy, giúp google hiểu cấu trúc bảng. không ảnh hưởng đến hiển thị trên web -->
+
+    <!-- colspan : chỉ định  phần tử chiếm bao nhiêu cột -->
+    <!-- rowspan : chỉ định phần tử chiếm bao nhiêu hàng -->
+    <table>
+        <tr>
+            <th>Nhân Vật</th>
+            <th colspan="2">Sức Mạnh</th>
+        </tr>
+        <tr>
+            <td>Murad</td>
+            <td>SSS</td>
+        </tr>
+        <tr>
+            <td rowspan="2">tung tung sahur</td>
+            <td>Đánh giá : 36S+</td>
+            
+        </tr>
+        <tr>
+            <td>Xếp hạng : súc vật</td>
+        </tr>
+        <tr>
+            <td>Aya</td>
+            <td colspan="2">Siêu cấp súc vật, không biết nói gì, sv aya </td>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th colspan="2">Giá sản phẩm</th>
+                <th>Số lượng còn lại</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Áo thun nam</td>
+                <td>100.000vnd</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Quần jean nữ</td>
+                <td>200.000vnd</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Giày thể thao</td>
+                <td>300.000</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Remark</td>
+                <td>Chỉ thống kê sản phẩm trong kho</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
