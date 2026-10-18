@@ -1,6 +1,21 @@
 h1 {
   color: blue;
+  /* màu chữ */
   font-style: italic;
+  /* kiểu chữ */
+  /* italic : chữ nghiêng */
+  font-family: Arial, Helvetica, sans-serif;
+  /* font chữ */
+  text-transform: capitalize;
+  /* chuyển viết hoa, viết thường */
+  /* capitalize : viết hoa tất cả chữ đầu trong câu */
+  /* lowercase : viết thường tất cả */
+  /* uppercase : viết hoa tất cả */
+  text-align: center;
+  /* căn dòng */
+  /* center : toàn bộ chữ chuyển ra giữa */
+  font-size: 20px;
+  /* cỡ chữ */
 }
 p {
   color: green;
