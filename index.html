@@ -12,11 +12,13 @@
     <!-- muốn cho 2 thẻ cùng thuộc tính thì chỉ cần thẻ1,thẻ2{color,font-style...} -->
     <!-- vẫn khó quản lý khi dự án lớn, quá nhiều mã css sẽ làm html cồng kềnh -->
     <link rel="stylesheet" href="style.css">
+    <!-- do các file html nằm ở folder khác (other) không nằm ở ngoài (my-html) nên khi muốn liên kết cái file html trong other phải có đường dẫn : /style.css hoặc .../style.css để liên kết nếu không sẽ không nhận  -->
     <style>
         h1{
             color: brown;
         }
     </style>
+    <!-- giữa link và style cái này ghi trước sẽ bị cái sau đè lên. vd: viết link trước style thì link sẽ bị đè bởi style còn viết style trước link thì style sẽ bị link đè vào -->
     <title>HTML Learning</title>
 </head>
 <body>
