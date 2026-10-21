@@ -25,3 +25,26 @@ h3 {
   color: blueviolet;
   font-style: oblique;
 }
+h2 {
+  opacity: 50%;
+  /* điều chỉnh độ trong suốt của chữ, trong suốt cả màu nền. càng nhỏ càng mờ và ngược lại. bằng 0 sẽ không hiển thị như kiểu bị ẩn, nếu chỉ đúng chỗ vẫn copy đc như thường */
+  background-color: brown;
+  /* chỉnh màu nền của đơn vị mình chọn */
+}
+body {
+  background-image: url(/picture/catt.jpg);
+}
+h4 {
+  display: none;
+  /* điều chỉnh hiển thị, none là ẩn hoàn toàn khỏi giao diện khác opacity : 0 */
+}
+h5 {
+  visibility: hidden;
+  /* hidden : ẩn, vẫn chiếm dòng, không tương tác đc. ẩn cả phần tử ngoài lẫn trong. vd : trong h5 bị ẩn có thẻ b,p,span,a,.... cũng sẽ bị ẩn luôn mấy cái đấy */
+  /* chỉ có visibility có kế thừa. vd: h5 ân thì mấy cái ở trong h5 ẩn theo */
+}
+b {
+  visibility: visible;
+  /* visibility có thể hiện thị phân tử con như đây và thay đổi thuộc tính khác */
+  color: red;
+}
