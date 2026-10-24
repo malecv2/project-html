@@ -32,7 +32,7 @@ h2 {
   /* chỉnh màu nền của đơn vị mình chọn */
 }
 body {
-  background-image: url(/picture/catt.jpg);
+  background-image: url(/picture/webbg.jpg);
 }
 h4 {
   display: none;
@@ -47,4 +47,19 @@ b {
   visibility: visible;
   /* visibility có thể hiện thị phân tử con như đây và thay đổi thuộc tính khác */
   color: red;
+}
+img {
+  transition: 1.5s;
+  /* chỉ display ko thực hiện được animation, transition, các chuyển động,.... */
+}
+
+input:checked ~ img {
+  /* display: none; */
+  /* biến mất hoàn toàn khỏi giao diện */
+  /* visibility: hidden; */
+  /* biến mất khỏi giao diện nhưng vẫn chiếm vị trí */
+  opacity: 0;
+  /* làm mờ, vẫn tương tác được */
+  visibility: hidden;
+  /* thêm sau opacity để khi transition biến mất sẽ ko tương tác đc */
 }
