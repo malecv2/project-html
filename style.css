@@ -93,3 +93,7 @@ input:checked ~ img {
 }
 /* list-style : none để xoá các số,ký tự trước chữ */
 /* dùng . trước tên class để hoạt động. Một thuộc tính có thể có nhiều class trong đó, nhiều thuộc tính có thể thuộc 1 class, nếu thuộc tính trên có 2 class mà ở dưới chỉ có 1 class thì class giống nhau của cả 2 sẽ tác động cho cả 2 còn class còn lại chỉ tác động lên thuộc tính có nó   */
+* {
+  background-color: aqua;
+}
+/* "*" giúp thay đổi toàn bộ web, cái gì có trong web đều bị thay đổi chung */
