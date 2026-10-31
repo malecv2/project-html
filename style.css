@@ -100,4 +100,4 @@ input:checked ~ img {
 h2.demo {
   color: red;
 }
-/* chỉ ảnh hưởng những thuộc tính h2 có class là demo, những thuộc tính ko phải h2 nhưng vẫn chung class ko bị ảnh hưởng */
+/* chỉ ảnh hưởng những thuộc tính là h2 có class là demo, những thuộc tính ko phải h2 nhưng vẫn chung class ko bị ảnh hưởng */
