@@ -97,3 +97,7 @@ input:checked ~ img {
   background-color: aqua;
 }
 /* "*" giúp thay đổi toàn bộ web, cái gì có trong web đều bị thay đổi chung */
+h2.demo {
+  color: red;
+}
+/* chỉ ảnh hưởng những thuộc tính h2 có class là demo, những thuộc tính ko phải h2 nhưng vẫn chung class ko bị ảnh hưởng */
