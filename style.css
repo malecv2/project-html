@@ -118,3 +118,15 @@ p,
   /* trang trí thêm chi tiết cho chữ. ở đây line-through là gạch ngang */
   /* .classname1.classname2 : chỉ tác động lên thẻ có cả 2 class. nếu chỉ có 1/2 sẽ ko ảnh hưởng */
 }
+div p {
+  color: cadetblue;
+}
+/* thay đổi các thẻ p nằm trong div */
+div.readme p {
+  font-size: 30px;
+}
+/* nếu có class trong thẻ div thì phải div.tênclass rồi mới cách ra để ghi thẻ trong div */
+div > p {
+  color: chocolate;
+}
+/* chỉ thay đổi hàng con của div, các thẻ cháu,chắt,chút,chít ko tính (là các thẻ nằm trong cả các thẻ con) */
