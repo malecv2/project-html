@@ -31,6 +31,7 @@ h3 {
   -ms-user-select: none;
   user-select: none;
 }
+/* tác động lên cả h2,h3 */
 h2 {
   opacity: 50%;
   /* điều chỉnh độ trong suốt của chữ, trong suốt cả màu nền. càng nhỏ càng mờ và ngược lại. bằng 0 sẽ không hiển thị như kiểu bị ẩn, nếu chỉ đúng chỗ vẫn copy đc như thường */
@@ -78,7 +79,7 @@ input:checked ~ img {
 /* không nên ghi cùng 1 id đã có (ghi cũng ko sao) */
 /* id,class ko đc bắt đầu bằng số. nếu có 2 ký tự trở lên dùng dấu - hoặc _ để nối */
 .demo {
-  color: yellow;
+  color: red;
   font-family:
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -101,3 +102,19 @@ h2.demo {
   color: red;
 }
 /* chỉ ảnh hưởng những thuộc tính là h2 có class là demo, những thuộc tính ko phải h2 nhưng vẫn chung class ko bị ảnh hưởng */
+p,
+.demo,
+#doan3 {
+  color: violet;
+  background-color: black;
+  font-size: 16px;
+}
+/* chỉnh các thẻ p và các thẻ có class demo. nếu quên dấu "." trước tên class thì class đó sẽ ko bị thay đổi bởi css */
+.test.test2 {
+  font-style: oblique;
+  font-weight: 600;
+  /* chỉnh độ đậm nhạt của chữ */
+  text-decoration: line-through;
+  /* trang trí thêm chi tiết cho chữ. ở đây line-through là gạch ngang */
+  /* .classname1.classname2 : chỉ tác động lên thẻ có cả 2 class. nếu chỉ có 1/2 sẽ ko ảnh hưởng */
+}
