@@ -26,25 +26,13 @@ h2,
 h3 {
   color: blueviolet;
   font-style: oblique;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 /* tác động lên cả h2,h3 */
 h2 {
-  opacity: 50%;
+  opacity: 100%;
   /* điều chỉnh độ trong suốt của chữ, trong suốt cả màu nền. càng nhỏ càng mờ và ngược lại. bằng 0 sẽ không hiển thị như kiểu bị ẩn, nếu chỉ đúng chỗ vẫn copy đc như thường */
-  background-color: brown;
+  background-color: red;
   /* chỉnh màu nền của đơn vị mình chọn */
-}
-body {
-  background-image: url(/picture/webbg.jpg);
-}
-h4 {
-  display: flex;
-  flex-direction: row;
-  /* điều chỉnh hiển thị, none là ẩn hoàn toàn khỏi giao diện khác opacity : 0 */
 }
 h5 {
   visibility: hidden;
@@ -95,9 +83,7 @@ input:checked ~ img {
 }
 /* list-style : none để xoá các số,ký tự trước chữ */
 /* dùng . trước tên class để hoạt động. Một thuộc tính có thể có nhiều class trong đó, nhiều thuộc tính có thể thuộc 1 class, nếu thuộc tính trên có 2 class mà ở dưới chỉ có 1 class thì class giống nhau của cả 2 sẽ tác động cho cả 2 còn class còn lại chỉ tác động lên thuộc tính có nó   */
-* {
-  background-color: aqua;
-}
+
 /* "*" giúp thay đổi toàn bộ web, cái gì có trong web đều bị thay đổi chung */
 h2.demo {
   color: red;
