@@ -42,7 +42,7 @@ body {
   background-image: url(/picture/webbg.jpg);
 }
 h4 {
-  display: none;
+  /* display: none; */
   /* điều chỉnh hiển thị, none là ẩn hoàn toàn khỏi giao diện khác opacity : 0 */
 }
 h5 {
@@ -130,3 +130,36 @@ div > p {
   color: chocolate;
 }
 /* chỉ thay đổi hàng con của div, các thẻ cháu,chắt,chút,chít ko tính (là các thẻ nằm trong cả các thẻ con) */
+h4 + h2 {
+  font-weight: bold;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+/* ảnh hưởng tới h2 nằm ngay dưới h4 */
+/* đứng sát ngay sau dùng +. chỉ có thể dùng khi đứng sau nhau, nếu cách nhau bởi thuộc tính khác sẽ ko nhận */
+/* .test + p {
+  text-align: center;
+} */
+/* tác động lên từ test đầu tiên xuống test thứ hai và từ test thứ hai xuống p */
+.test.test2 + p,
+block {
+  text-align: end;
+}
+/* chỉ tác động dòng dưới từ test test2  */
+/* có thể tác động vào các thuộc tính khác sau khi viết thuộc tính ngay sau nó bằng dấu , (ko cần phải theo thứ tự sau dấu , muốn cái gì cũng đc) */
+div ~ a {
+  color: rebeccapurple;
+  cursor: pointer;
+}
+/* chọn tất cả thẻ a (ko nằm trong div vẫn tính vì chỉ cần nó sau div) */
+h1 ~ h3 {
+  color: blue;
+}
+/* chọn tất cả h3 sau h1 */
+div ~ div {
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* div đầu tiên sẽ ảnh hưởng tất cả div sau */
+/* ~ có thể dùng kể cả khi thuộc tính sau ko ở đằng sau thuộc tính trước */
