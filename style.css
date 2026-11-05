@@ -42,7 +42,8 @@ body {
   background-image: url(/picture/webbg.jpg);
 }
 h4 {
-  /* display: none; */
+  display: flex;
+  flex-direction: row;
   /* điều chỉnh hiển thị, none là ẩn hoàn toàn khỏi giao diện khác opacity : 0 */
 }
 h5 {
