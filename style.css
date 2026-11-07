@@ -158,3 +158,23 @@ p[href] {
 [target="_blank"] {
   color: pink;
 }
+[title~="pick"] {
+  font-weight: bold;
+}
+/* chỉnh thuộc tính title chỉ chứa ký tự tên "pick" trong đó (pick1,pick2 sẽ ko tính vì chỉ có "pick" là đc chọn */
+[title*="pick"] {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* ảnh hưởng tất cả các thẻ title có ký tự pick bên trong (khác ở trên ở đây chỉ cần có ký tự pick là đc) */
+[title|="pick"] {
+  color: chocolate;
+}
+/* ảnh hưởng các thẻ title có ký tự pick nằm ở đầu hoặc có dấu nối (bắt buộc nếu muốn viết các từ khác sau pick). vd: pick-me (chỉ có dấu - mới tính). có một chuỗi số đằng sau liền với pick cũng ko tính */
+[title^="pick"] {
+  padding: 10px;
+}
+/* chỉ cần trong thẻ title có ký tự pick đứng đầu sẽ thay đổi */
+[title$="0"] {
+  font-size: xx-large;
+}
+/* thay đổi các thẻ title có kết thúc là ký tự 0 */
