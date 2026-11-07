@@ -150,3 +150,11 @@ div ~ div {
 }
 /* div đầu tiên sẽ ảnh hưởng tất cả div sau */
 /* ~ có thể dùng kể cả khi thuộc tính sau ko ở đằng sau thuộc tính trước */
+p[href] {
+  color: green;
+}
+/* tác động lên toàn bộ thẻ href, chỉ cần có href nằm trong thẻ đó thì thẻ đó vẫn sẽ thay đổi theo */
+/* nếu thêm thẻ như a,p,hq,h2,... trước href sẽ chỉ tác động những thẻ đó và có href ở trong */
+[target="_blank"] {
+  color: pink;
+}
