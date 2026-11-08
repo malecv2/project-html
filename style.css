@@ -178,3 +178,17 @@ p[href] {
   font-size: xx-large;
 }
 /* thay đổi các thẻ title có kết thúc là ký tự 0 */
+#dichuot:hover {
+  color: red;
+  font-size: 20px;
+}
+/* khi di chuột vào thẻ đc chọn sẽ thay đổi thẻ đấy */
+.dichuot2:hover {
+  color: blue;
+  font-size: 20px;
+}
+p:active {
+  color: orange;
+  font-weight: bold;
+}
+/* nhấn và giữ vào thẻ chỉ định mới thấy thay đổi */
