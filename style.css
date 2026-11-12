@@ -192,3 +192,11 @@ p:active {
   font-weight: bold;
 }
 /* nhấn và giữ vào thẻ chỉ định mới thấy thay đổi */
+.click_me:link {
+  color: chocolate;
+}
+/* thay đổi khi người dùng chưa click vào */
+.click_me:visited {
+  color: red;
+}
+/* thay đổi sau khi người dùng click vào */
