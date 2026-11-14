@@ -200,3 +200,14 @@ p:active {
   color: red;
 }
 /* thay đổi sau khi người dùng click vào */
+.div_elm:empty {
+  width: 200px;
+  height: 200px;
+  /* w/h100/200... : điều chỉnh width, height nhanh hơn */
+  background-color: blue;
+}
+/* chỉ tác động lên các thẻ div trống nội dung (ko ghi gì) bên trong */
+h2:target {
+  color: blue;
+}
+/* thay đổi khi ấn vào liên kết */
