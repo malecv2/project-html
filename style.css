@@ -211,3 +211,34 @@ h2:target {
   color: blue;
 }
 /* thay đổi khi ấn vào liên kết */
+p:first-child {
+  color: red;
+  font-size: 30px;
+}
+/* tác động lên các thẻ con p nằm đầu tiên trong thẻ cha */
+p:last-child {
+  color: blue;
+  font-size: 35px;
+}
+/* tác động thẻ con cuối cùng trong thẻ cha */
+p:nth-child(2) {
+  color: pink;
+}
+/* tác động lên thẻ con thứ 2 trong thẻ cha */
+p:nth-child(even) {
+  color: red;
+  font-size: 30px;
+}
+/* tác động lên các phần tử con có vị trí chẵn */
+/* nth-child(odd) : tác động phần tử con có vị trí lẻ */
+/* nth-child(3n+1) */
+/* n = 0 => 1  */
+/* n = 1 => 4 */
+/* n = 2 => 7 */
+
+/* nth-last-child(2,even,odd,3n+1) : tác động thẻ thứ n từ dưới lên */
+p:only-child {
+  color: blue;
+  font-size: 40px;
+}
+/* tác động lên thẻ cha chỉ có một thẻ con duy nhất */
