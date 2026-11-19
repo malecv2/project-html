@@ -242,3 +242,22 @@ p:only-child {
   font-size: 40px;
 }
 /* tác động lên thẻ cha chỉ có một thẻ con duy nhất */
+p:first-of-type {
+  color: red;
+  font-size: 40px;
+}
+/* tác động lên thẻ con p đầu tiên trong thẻ cha, chỉ cần là thẻ p đầu tiên ko cần phải đứng đầu trong thẻ cha   */
+h2:last-of-type {
+  color: pink;
+  font-size: 40px;
+}
+/* tác động lên thẻ h2 cuối cùng trong thẻ cha, ko quan tâm còn thẻ con khác nào đằng sau, chỉ tính h2 */
+p:nth-of-type(3) {
+  color: blueviolet;
+}
+/* đổi đúng p thứ ba (tính từ p đầu tiên) */
+p:only-of-type {
+  color: blue;
+  font-size: 40px;
+}
+/* tác động lên thẻ con p nằm duy nhất trong thẻ cha (ko còn thẻ p khác đc trong đấy) */
