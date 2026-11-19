@@ -261,3 +261,22 @@ p:only-of-type {
   font-size: 40px;
 }
 /* tác động lên thẻ con p nằm duy nhất trong thẻ cha (ko còn thẻ p khác đc trong đấy) */
+.top:not(p) {
+  background-color: yellow;
+}
+/* chỉnh các thẻ có class top, nhưng ko chỉnh thẻ duy nhất thẻ p dù có class */
+.top:not(:first-of-type) {
+  background-color: coral;
+}
+/* tác động lên thẻ con ko phải đầu tiên (có thẻ tương tự ở trước) */
+
+/* "*" là css yếu nhất - tác động lên toàn bộ code trong html : rank 6 */
+/* selector (h1,h2,p,...) : rank 5 */
+/* class - pseudo-class : rank 4 */
+/* id : rank 3 */
+/* inline css (viết css trong html) : rank 2 */
+/* !important : mạnh nhất, ưu tiên đầu (chỉ cần có thì "*" cũng mạnh) */
+/* cái nào yếu hơn sẽ bị cái mạnh hơn đè lên */
+* {
+  background-color: white !important;
+}
